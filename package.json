@@ -1,14 +1,14 @@
 {
   "name": "react-native-wheel-scroll-picker",
   "version": "0.2.4",
-  "description": "a pure js picker, each option item customizable",
+  "description": "a pure ts picker, each option item customizable",
   "main": "index.tsx",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yasemincidem/react-native-picker-scrollview"
+    "url": "https://github.com/ZloyRob/react-native-picker-scrollview"
   },
   "keywords": [
     "picker",
@@ -18,7 +18,16 @@
   "author": "yasemin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/yasemincidem/react-native-picker-scrollview/issues"
+    "url": "https://github.com/ZloyRob/react-native-picker-scrollview/issues"
   },
-  "homepage": "https://github.com/yasemincidem/react-native-picker-scrollview#readme"
+  "homepage": "https://github.com/ZloyRob/react-native-picker-scrollview#readme",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "@types/react": "*",
+    "@types/react-native": "*",
+    "@types/node": "*"
+  }
 }
