@@ -61,14 +61,14 @@ const ScrollPicker = <T,>({
   const scrollViewRef = useRef<ScrollView>(null);
 
   useEffect(() => {
-    if (selectedIndex !== undefined) {
+    if (selectedIndex !== undefined && selectedIndex !== currentSelectedIndex) {
       setTimeout(() => {
         scrollToIndex(selectedIndex);
       }, 1);
     }
 
     if (timer) return () => clearTimeout(timer);
-  }, []);
+  }, [selectedIndex]);
 
   const scrollFix = (e: any) => {
     let verticalY = 0;
